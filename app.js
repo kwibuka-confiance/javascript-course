@@ -52,16 +52,35 @@ const print = (args) => {
 //   print(i);
 // }
 
-// function canIwatchAdultFilm(years, name) {
+//! function canIwatchAdultFilm(years, name) {
 //   // `Hello ${name}, You can watch adult film`
-//   if (years >= 20) return " hello " + name + " You can watch adult film";
-//   else return ` oh sorry ${name}, you're to young to watch this films`;
-// }
+//!   if (years >= 20) return " hello " + name + " You can watch adult film";
+//!   else return ` oh sorry ${name}, you're to young to watch this films`;
+// !}
 
 // // console.log(canIwatchAdultFilm(20, "Shumbusho"));
 
-for (let i = 0; i <= 100; i++) {
-  if (i >= 50 && i <= 80) {
-    print(i);
-  }
-}
+// Array
+
+//  const person = {}
+
+//? How many people we have in goup 2 teckup skill
+//? SHOW ALL PARTICIPANTS THAT CAMES AT 9 AM
+
+const participants = [
+  { name: "ALVIN", age: 21, cameTme: 10 },
+  { name: "MOISE", age: 22, cameTme: 11 },
+  { name: "EMILE", age: 25, cameTme: 9 },
+  { name: "PATRICK", age: 23, cameTme: 10 },
+  { name: "GLORIA", age: 21, cameTme: 11 },
+  { name: "AUTHOR", age: 19, cameTme: 11 },
+  { name: "LILIANE", age: 21, cameTme: 9 },
+  { name: "CHANICE", age: 21, cameTme: 10 },
+];
+
+// todo  show me the people above 22 years old and came at 9 oclock
+
+const result = participants.filter(
+  (element) => element.cameTme == 11 && element.age == 21
+);
+console.log(result);
